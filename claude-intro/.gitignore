@@ -1,0 +1,7 @@
+out/
+stills/
+review/
+voices/.cache/
+fonts/*.ttf
+fonts/*.woff2
+fonts/.notosc-chars

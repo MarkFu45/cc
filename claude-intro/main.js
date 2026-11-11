@@ -1,0 +1,12 @@
+import { renderFilm, setLines, subs, buildEvents, texts, DUR } from './film.js';
+const cv = document.getElementById('c'), g = cv.getContext('2d');
+await Promise.all([400, 500, 600, 700].flatMap(w => [`${w} 40px Inter`, `${w} 40px InterTight`, `${w} 40px JBMono`, `${w} 40px NotoSC`]).map(f => document.fonts.load(f, 'Aa0中')));
+const get = async (u, d) => { try { const r = await fetch(u); return r.ok ? await r.json() : d; } catch { return d; } };
+setLines(await get('lines.json', []), await get('voices/dur.json', null));
+window.DUR = DUR;
+window.EV = buildEvents();
+window.SUBS = subs();
+window.TEXTS = texts;
+const Q = new URLSearchParams(location.search);
+window.render = t => renderFilm(g, t, { nosub: Q.has('nosub') });
+window.READY = true;

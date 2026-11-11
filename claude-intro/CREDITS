@@ -1,0 +1,16 @@
+从一句话开始 · a short film introducing Claude
+
+Picture, score and sound effects: drawn and synthesized in code for this film (no samples, no stock footage, no generated video).
+
+Fonts (SIL Open Font License 1.1, fetched by fonts.sh, not stored in git):
+- Inter, Inter Tight — Rasmus Andersson, https://github.com/rsms/inter (fonts/OFL-inter.txt)
+- JetBrains Mono — JetBrains, https://github.com/JetBrains/JetBrainsMono (fonts/OFL-jetbrainsmono.txt)
+- Noto Sans SC (subset to the characters used) — Google, https://fonts.google.com/noto/specimen/Noto+Sans+SC
+
+Voice: Microsoft Edge neural text-to-speech (zh-CN-YunxiNeural) via edge-tts, https://github.com/rany2/edge-tts (GPL-3.0 tool; voice output from Microsoft's online service — check Microsoft's terms before commercial use).
+Speech check: faster-whisper (MIT), model "small" (OpenAI Whisper, MIT).
+
+Style and tools: Lemo-Opuscar "Dark Tech Keynote" style guide, engine.js and core/ render, TTS and mix tools — https://github.com/lemomo-ai/lemo-opuscar (MIT).
+Prompt grammar reference: "Product Launch Motion Film" prompt by @0xnicc0, collected in https://github.com/yihui-dev/awesome-opus5-5-videos (MIT); used for its structure only.
+
+"Claude" and "Anthropic" are names of Anthropic PBC; they appear as text only. No Anthropic logo or interface is reproduced: every interface element is original and drawn in code.
